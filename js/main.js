@@ -1,9 +1,9 @@
-/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-        x.className += " responsive";
-    } else {
-        x.className = "topnav";
-    }
-}
+$(document).ready(function() {
+    $('.open-menu').on('click', function() {
+         $('.overlay').addClass('open');
+        });
+
+    $('.close-menu').on('click', function() {
+        $('.overlay').removeClass('open');
+        });
+});
