@@ -21,9 +21,14 @@ html {
 /**
  * Remove the margin in all browsers (opinionated).
  */
+ 
+*, *:before, *:after {
+    box-sizing: border-box;
+}
 
 body {
   margin: 0;
+  padding: 0;
 }
 
 /**
