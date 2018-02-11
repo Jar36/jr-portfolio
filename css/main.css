@@ -94,9 +94,19 @@ textarea {
 }
 
 /* ==========================================================================
-   Author's custom styles
+   My custom styles
+
+   font-family: 'Raleway', sans-serif;
+   font-family: 'Megrim', cursive;
    ========================================================================== */
-@import url('https://fonts.googleapis.com/css?family=Megrim');
+
+/* ==========================================================================
+   Navigation
+   ========================================================================== */
+
+nav h2.brand {
+    font-family: 'Megrim', cursive;
+}
 
 .navbar {
     height: 90px;
@@ -116,20 +126,86 @@ textarea {
 }
 
 /* Contact button */
-.button {
-    background-color: rgba(44, 45, 47, .749);
-    width: 97px;
+
+/*button.button {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+}
+*/
+button.button {
+    background-color: transparent;
+    /*width: 97px;
     height: 30px;
-    font-size: .75em;
+    font-size: .75em;*/
     color: #fff;
-    border: none;
-    border-radius: 20px;
+    border: none/*1px solid #1CD9A4*/;
+    border-radius: 25px;
     cursor: pointer;
+    transition: all.3s;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
 }
 
-svg:hover {
-    fill: #1CD9A4;
+.button::after {
+    content: '';
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    width: 0%;
+    transform: translateX(-50%);
+    height: 2px;
+    background: #fff;
+    transition: .35s;
 }
+
+.button:hover,
+.button:focus,
+.button:active {
+    color: #fff;
+}
+
+.button:hover:after,
+.button:focus:after,
+.button:active:after {
+    width:100%;
+    background: #E00049;
+
+}
+
+/*.button:hover::after {
+    width: 35%;
+}*/
+
+.button:hover {
+    background: transparent/*#E00049*/;
+    border: none/*1px solid #E00049*/;
+    color: #fff;
+}
+
+button:focus {
+    outline: 0;
+}
+
+.open-menu,
+.close-menu
+ {
+    cursor: pointer;
+    transition: transform 0.30s;
+}
+
+
+.close-menu:hover {
+    transform: scale(1.1);
+    transform: rotate(720deg);
+}
+
+.button:hover,
+.open-menu:hover
+ {
+    transform: scale(1.1);
+}
+
+/* Overlay */
 
 .overlay {
     position: fixed;
@@ -152,7 +228,8 @@ svg:hover {
 
 .overlay .nav-title {
     font-size: 1.375em;
-    color: #fff;
+
+    color: #E3F983;
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
@@ -171,7 +248,7 @@ svg:hover {
     font-weight: 400;
     text-transform: uppercase;
     text-align: center;
-    letter-spacing: 1em;
+    letter-spacing: .7em;
 }
 
 .overlay ul {
@@ -197,6 +274,7 @@ svg:hover {
     color: #fff;
     text-decoration: none;
     overflow: hidden;
+    transition: all .4s;
 }
 
 .overlay ul li a:after {
@@ -206,7 +284,7 @@ svg:hover {
     left: 43.5%;
     width: 0%;
     transform: translateX(-50%);
-    height: 3px;
+    height: 2px;
     background: #fff;
     transition: .35s;
 }
@@ -221,7 +299,7 @@ svg:hover {
 .overlay ul li a:focus:after,
 .overlay ul li a:active:after {
     width:100%;
-    background: #1CD9A4;
+    background: #E00049;
 }
 
 .overlay.open li {
@@ -241,6 +319,8 @@ svg:hover {
     animation-delay: .5s;
 }
 
+/* Animation for menu fade in */
+
 @keyframes fadeInRight {
     0% {
         opacity: 0;
@@ -252,28 +332,104 @@ svg:hover {
     }
 }
 
-button:focus {
-    outline: 0;
+
+
+/* ==========================================================================
+   Section 1 Header
+   ========================================================================== */
+
+header {
+    max-width: 100%;
+    text-align: center;
 }
 
-.open-menu,
-.close-menu,
-.button {
-    cursor: pointer;
-    transition: transform 0.30s;
+.s1 {
+    margin: 0 auto;
+    height: auto;
+    background-color: #424242;
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.6)
+    ), url("../img/conifers.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    padding-bottom:20px;
 }
 
-.open-menu:hover,
-.close-menu:hover {
-    transform: scale(1.1);
-    transform: rotate(720deg);
+.s1 header {
+    margin: 100px auto;
 }
 
-.button:hover {
-    transform: scale(1.1);
+.s1 header h1 {
+    margin: auto;
+    width:100%;
+    padding: 20px 30px;
+    font-family: 'Megrim', cursive;
+    font-size: 3.5em;
+    letter-spacing: 12px;
+    line-height: 2.5em;
+    text-transform: uppercase;
+}
+
+.s1 header h3 {
+    font-family: 'Raleway';
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.s1 header p {
+    margin: 0 auto;
+    font-family: 'Raleway';
+    letter-spacing: 2px;
+    line-height: 1.8em;
+    font-weight: 200;
+    width: 80%
+}
+
+.hl-pink {
+    color: #E00049;
+}
+
+.hl-green {
+    color: #1CD9A4;
+}
+
+.hl-yellow {
+    color: #E3F983;
+}
+
+.boxed {
+    padding: 12px 20px;
+    border: 2px solid #e00049;
+}
+
+.giant {
+    position: absolute;
+    font-size: 10em;
+    z-index: 1;
+    top: 10;
+    right: 10;
+    transform: rotate(90deg);
+}
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+@media (max-width: 800px) {
+
 }
 
 @media (max-width: 670px) {
+    header h1 {
+        font-size: 1.8em;
+        line-height: 2.5em;
+    }
+
     .overlay nav {
         font-size: 1.875em;
     }
