@@ -495,7 +495,9 @@ span#element2, span#element3, span#element4 {
    }
 
    header .intro {
-       padding:20px;
+       /*padding:50px;*/
+       max-width: 80%;
+       margin: 0 auto;
    }
 
     .s2 h1 {
