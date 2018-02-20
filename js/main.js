@@ -25,7 +25,7 @@ const secondInstance = new TypeIt("#element2", {
 });
 
 const thirdInstance = new TypeIt("#element3", {
-	strings: ["Projects", "Recent Work", "All The Things..."],
+	strings: ["Projects", "Recent Work..."],
 	breakLines: false,
 	nextStringDelay: 3000,
 	loop: false,
