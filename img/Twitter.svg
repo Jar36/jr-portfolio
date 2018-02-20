@@ -1,0 +1,27 @@
+<svg width="116" height="116" viewBox="0 0 116 116" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Twitter</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(2359 -3207)">
+<g id="Twitter" filter="url(#filter0_d)">
+<g id="Ellipse">
+<use xlink:href="#path0_fill" transform="translate(-2351 3211)" fill="#000"/>
+</g>
+<g id="&#239;&#130;&#153;">
+<use xlink:href="#path1_fill" transform="translate(-2318 3243)" fill="#FFFFFF"/>
+</g>
+</g>
+</g>
+<defs>
+<filter id="filter0_d" filterUnits="userSpaceOnUse" x="-2359" y="3207" width="116" height="116" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 255 0"/>
+<feOffset dx="0" dy="4"/>
+<feGaussianBlur stdDeviation="4"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+</filter>
+<path id="path0_fill" d="M 100 50C 100 77.6142 77.6142 100 50 100C 22.3858 100 0 77.6142 0 50C 0 22.3858 22.3858 0 50 0C 77.6142 0 100 22.3858 100 50Z"/>
+<path id="path1_fill" d="M 32.5446 8.33929C 31.3795 8.84152 30.1138 9.20312 28.808 9.34375C 30.154 8.54018 31.1786 7.27455 31.6607 5.76786C 30.4152 6.51116 29.0089 7.05357 27.5424 7.33482C 26.3571 6.0692 24.6696 5.28571 22.8013 5.28571C 19.2054 5.28571 16.3125 8.19866 16.3125 11.7746C 16.3125 12.2768 16.3728 12.779 16.4732 13.2612C 11.0893 12.9799 6.28795 10.4085 3.09375 6.47098C 2.53125 7.43527 2.20982 8.54018 2.20982 9.74554C 2.20982 11.9955 3.35491 13.9844 5.10268 15.1496C 4.03795 15.1094 3.03348 14.808 2.16964 14.3259C 2.16964 14.346 2.16964 14.3862 2.16964 14.4062C 2.16964 17.5603 4.39955 20.1719 7.37277 20.7746C 6.83036 20.9152 6.24777 20.9955 5.66518 20.9955C 5.2433 20.9955 4.84152 20.9554 4.43973 20.8951C 5.26339 23.4665 7.65402 25.3348 10.5067 25.3951C 8.27679 27.1429 5.48438 28.1674 2.45089 28.1674C 1.90848 28.1674 1.40625 28.1473 0.883929 28.0871C 3.7567 29.9353 7.17188 31 10.8482 31C 22.7812 31 29.3103 21.1161 29.3103 12.5379C 29.3103 12.2567 29.3103 11.9754 29.2902 11.6942C 30.5558 10.7701 31.6607 9.625 32.5446 8.33929Z"/>
+</defs>
+</svg>

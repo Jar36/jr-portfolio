@@ -1,0 +1,27 @@
+<svg width="116" height="116" viewBox="0 0 116 116" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Linkedin</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(2172 -3207)">
+<g id="Linkedin" filter="url(#filter0_d)">
+<g id="Ellipse">
+<use xlink:href="#path0_fill" transform="translate(-2164 3211)" fill="#000"/>
+</g>
+<g id="&#239;&#131;&#161;">
+<use xlink:href="#path1_fill" transform="translate(-2130 3243)" fill="#FFFFFF"/>
+</g>
+</g>
+</g>
+<defs>
+<filter id="filter0_d" filterUnits="userSpaceOnUse" x="-2172" y="3207" width="116" height="116" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 255 0"/>
+<feOffset dx="0" dy="4"/>
+<feGaussianBlur stdDeviation="4"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+</filter>
+<path id="path0_fill" d="M 100 50C 100 77.6142 77.6142 100 50 100C 22.3858 100 0 77.6142 0 50C 0 22.3858 22.3858 0 50 0C 77.6142 0 100 22.3858 100 50Z"/>
+<path id="path1_fill" d="M 7.01116 12.6987L 0.381696 12.6987L 0.381696 32.6071L 7.01116 32.6071L 7.01116 12.6987ZM 7.43304 6.55134C 7.41295 4.60268 6.0067 3.11607 3.73661 3.11607C 1.48661 3.11607 0 4.60268 0 6.55134C 0 8.45982 1.42634 9.98661 3.65625 9.98661L 3.69643 9.98661C 6.0067 9.98661 7.45312 8.45982 7.43304 6.55134ZM 30.8571 21.1964C 30.8571 15.0893 27.6027 12.2366 23.2433 12.2366C 19.6674 12.2366 18.1004 14.2254 17.2366 15.5915L 17.2768 15.5915L 17.2768 12.6987L 10.6674 12.6987C 10.6674 12.6987 10.7478 14.567 10.6674 32.6071L 17.2768 32.6071L 17.2768 21.4978C 17.2768 20.8951 17.3371 20.3125 17.4978 19.8705C 17.9799 18.6853 19.0647 17.4598 20.8929 17.4598C 23.2835 17.4598 24.2478 19.2879 24.2478 21.9598L 24.2478 32.6071L 30.8571 32.6071L 30.8571 21.1964Z"/>
+</defs>
+</svg>

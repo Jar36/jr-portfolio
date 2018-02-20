@@ -9,11 +9,15 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
 
 html {
     color: #222;
     font-size: 1em;
     line-height: 1.4;
+    height: 100%;
 }
 
 /*
@@ -93,24 +97,164 @@ textarea {
     padding: 0.2em 0;
 }
 
-/* ==========================================================================
-   My custom styles
+body {
+   height: 100%;
+   font-family: 'Poppins', sans-serif;
+}
 
-   font-family: 'Raleway', sans-serif;
-   font-family: 'Megrim', cursive;
+h1 {
+    font-size: 3.5em;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+span#element2, span#element3, span#element4 {
+    color: #fff;
+    background: #000;
+    /*box-shadow: 0 8px 20px -1px rgba(0, 0, 0, .5); maybe */
+    padding: 10px;
+}
+
+/* ==========================================================================
+   Layout Grid
    ========================================================================== */
+
+    .row {
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex;
+     margin: 0 0 20px 0;
+
+   }
+
+   .col {
+     /*background: #f7f7f7;*/
+     padding: 20px;
+   }
+
+   .row-thirds, .row-fourths, .row-halves {
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex;
+     margin: 0 0 20px 0;
+     -webkit-box-pack: justify;
+         -ms-flex-pack: justify;
+             justify-content: space-between;
+   }
+
+   .row .col {
+     -webkit-box-flex: 1;
+         -ms-flex: 1;
+             flex: 1;
+   }
+
+   .row-fourths .col {
+       width: 23.4%;
+   }
+
+   .row-thirds .col {
+     width: 32%;
+   }
+
+   .row-halves .col {
+       width: 49%;
+   }
+
+   @media (max-width: 1000px) {
+     .row,
+     .row-halves
+      {
+       display: block;
+     }
+
+     .row .col,
+     .row-halves .col
+      {
+       width: 100%;
+       margin: 0 0 10px 0;
+     }
+   }
+
+
+   @media (max-width: 400px) {
+     .row,
+     .row-halves,
+     .row-thirds,
+     .row-fourths {
+       display: block;
+     }
+
+     .row .col,
+     .row-halves .col,
+     .row-thirds .col,
+     .row-fourths .col {
+       width: 100%;
+       margin: 0 0 10px 0;
+     }
+   }
+
+   /* ==========================================================================
+      Image Grid
+      ========================================================================== */
+
+    .img-row {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 4px;
+    }
+
+    /* Four column layout */
+
+    .column {
+        flex: 25%;
+        max-width: 25%;
+        padding: 0 4px;
+    }
+
+    .column img {
+        margin-top: 8px;
+        vertical-align: middle;
+    }
+
+    /* Two column layout */
+
+    @media (max-width: 800px) {
+        .column {
+        flex: 50%;
+        max-width: 50%;
+        }
+    }
+
+    /* One column layout */
+    @media (max-width: 600px) {
+        .column {
+        flex: 100%;
+        max-width: 100%;
+        }
+    }
+
 
 /* ==========================================================================
    Navigation
    ========================================================================== */
 
-   body {
-      height: 100%;
-   }
-   s1 {
+    s1 {
        display: flex;
        justify-content: space-evenly;
+       height: 100;
    }
+
+   .navbar img {
+       height: 32px;
+       width: 32px;
+       transition: all .35s;
+       box-shadow: 0px 3px 8px -1px rgba(0, 0, 0, 0.5);
+   }
+
+   .navbar img:hover {
+       transform: scale(1.1);
+   }
+
    button {
        background: none;
        border: none;
@@ -133,16 +277,16 @@ textarea {
    }
 
    .brand {
-       color: #fff;
+       color: #000;
        margin: 12px 15px;
-       paddin: 6px;
+       padding: 6px;
    }
 
    .bar1,
    .bar3 {
        width: 35px;
        height: 2px;
-       background-color: #fff;
+       background-color: #000;
        border-radius: 2px;
        margin: 6px 0;
        transition: 0.4s;
@@ -152,7 +296,7 @@ textarea {
        text-align: right;
        width: 25px;
        height: 2px;
-       background-color: #fff;
+       background-color: #000;
        border-radius: 20px;
        margin: 6px 0 6px 10px;
        transition: 0.4s;
@@ -161,7 +305,7 @@ textarea {
    .change .bar1 {
        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
        transform: rotate(-405deg) translate(-5px, 6px);
-       background: #e00049;
+       background: #Ffff;
    }
 
    .change .bar2 {
@@ -171,12 +315,12 @@ textarea {
    .change .bar3 {
        -webkit-transform: rotate(45deg) translate(-5px, -8px);
        transform: rotate(405deg) translate(-5px, -6px);
-       background: #e00049;
+       background: #Fff;
    }
-
 
    .navbar {
        position: fixed;
+       top:0;
        width: 100%;
        height: 90px;
        display: flex;
@@ -184,7 +328,9 @@ textarea {
        align-content: center;
        align-items: center;
        padding: 0 40px;
-       background: #303030;
+       background: #fff;
+       box-shadow: 0px 2px 15px 2px rgba(181, 181, 181, 0.2);
+       z-index: 999;
    }
 
    button {
@@ -218,7 +364,7 @@ textarea {
 
    .overlay {
        position: fixed;
-   	   background: rgba(0, 0, 0, 0.8);
+   	   background: rgba(0, 0, 0, .9);
    	   top: 0;
        left: 0;
        width: 100%;
@@ -227,106 +373,102 @@ textarea {
        visibility: hidden;
        transition: opacity 0.35s, visibility 0.35s, height 0.35s;
        overflow: auto;
+       z-index: 9999;
    }
 
    .overlay.open {
-   	opacity: 1;
-   	visibility: visible;
-   	height: 100%;
+       opacity: 1;
+   	   visibility: visible;
+   	   height: 100%;
    }
 
    .overlay .nav-title {
-   	font-size: 1.375em;
-   	color: #e00049;
-   	font-weight: bold;
-   	letter-spacing: 10px;
-   	text-transform: uppercase;
-   	text-align: center;
-   	position: relative;
-   	margin: 10px auto;
-   	left: 50%;
-   	transform: translate(-50%);
-   	top: 6%;
+   	   text-align: center;
+   	   position: relative;
+   	   margin: 10px auto;
+   	   left: 49%;
+   	   transform: translate(-50%);
+   	   top: 6%;
    }
 
    .overlay nav {
-   	position: relative;
-   	height: 40%;
-   	top: 35%;
-   	transform: translateY(-50%);
-   	text-align: center;
+       position: relative;
+   	   height: 40%;
+   	   top: 35%;
+   	   transform: translateY(-50%);
+   	   text-align: center;
    }
 
    .overlay ul {
-   	list-style: none;
-   	padding: 0;
-   	margin: 0 auto;
-   	display: inline-block;
-   	position: relative;
-    height: 100%;
+       list-style: none;
+   	   padding: 0;
+   	   margin: 0 auto;
+   	   display: inline-block;
+   	   position: relative;
+       height: 100%;
    }
 
    .overlay ul li {
-   	display: block;
-   	position: relative;
-   	opacity: 0;
-   	margin-bottom: 35px;
-   	font-family: "Exo 2", sans-serif;
-   	font-size: 3em;
-   	font-weight: 400;
-   	text-transform: uppercase;
-   	letter-spacing: 20px;
+       display: block;
+   	   position: relative;
+   	   opacity: 0;
+   	   margin-bottom: 35px;
+   	   font-size: 3em;
+   	   font-weight: 400;
+   	   text-transform: uppercase;
+   	   letter-spacing: 20px;
    }
 
    .overlay ul li a {
-   	display: block;
-    position: relative;
-   	color: #fff;
-   	text-decoration: none;
-   	overflow: hidden;
-   	transition: all 0.35s;
+       display: block;
+       position: relative;
+   	   color: #fff;
+       font-weight: bold;
+   	   text-decoration: none;
+   	   overflow: hidden;
+   	   transition: all 0.35s;
    }
 
    .overlay ul li a:after {
-   	content: "";
-   	position: absolute;
-   	top: 50%;
-   	left: 43.5%;
-   	width: 0%;
-   	transform: translateX(-50%);
-   	height: 4px;
-   	background: #fff;
-   	transition: 0.35s;
+       content: "";
+   	   position: absolute;
+   	   top: 50%;
+   	   left: 43.5%;
+   	   width: 0%;
+   	   transform: translateX(-50%);
+   	   height: 4px;
+   	   background: #fff;
+   	   transition: 0.35s;
    }
 
    .overlay ul li a:hover,
    .overlay ul li a:focus,
    .overlay ul li a:active {
-   	color: #fff;
+       color: #fff;
    }
 
    .overlay ul li a:hover:after,
    .overlay ul li a:focus:after,
    .overlay ul li a:active:after {
-   	width: 100%;
-   	background: #e00049;
+       width: 100%;
+   	   background: #fff;
    }
 
    .overlay.open li {
-   	animation: fadeInRight 0.5s ease forwards;
-   	animation-delay: 0.35s;
+       animation: fadeInRight 0.5s ease forwards;
+   	   animation-delay: 0.35s;
    }
 
    .overlay.open li:nth-of-type(2) {
-   	animation-delay: 0.4s;
+       animation-delay: 0.4s;
    }
 
    .overlay.open li:nth-of-type(3) {
-   	animation-delay: 0.45s;
+       animation-delay: 0.45s;
    }
 
    .overlay.open li:nth-of-type(4) {
-   	animation-delay: 0.5s;
+       animation-delay: 0.5s;
    }
 
    /* Animation for menu fade in */
@@ -345,38 +487,211 @@ textarea {
    /* Section 2 */
 
    .s2 {
-       background: red;
+       background: #fff;
        height: 100vh;
+       display: flex;
+       align-items: center;
+       justify-content: center;
    }
 
-   header.intro {
-       position: absolute;
-       top: 40%;
-       left: 30%;
-}
+    .s2 h1 {
+       margin: 0px auto;
+       padding: 0px;
+       line-height: 150%;
+       color: #323232;
+       font-size: 5em;
+   }
 
-   section .s2 h1 {
-       margin: 0;
-       padding: 0;
+   .s2 h1 span#huge-h1 {
+       font-size: 2.5em;
+       letter-spacing: 10px;
+   }
+
+   .s2 h1 span#accent {
+       color: #000;
+   }
+
+   .s2 h1 span#element1 {
+       color: #fff;
+       background: #000;
+       box-shadow: 0 8px 20px -1px rgba(0, 0, 0, .5);
+       font-family: 'PT Serif', serif;
+       font-weight: 400;
 
    }
 
-   /* ==========================================================================
+   /* Section 3 */
+
+   .s3 {
+       padding: 20px;
+       display: flex;
+       align-items: center;
+       background: #f9f9f9;
+   }
+
+   span.ti-cursor {
+        font-weight: 300!important;
+    }
+
+   .s3 p{
+       font-size: 1.15em;
+       line-height: 150%;
+   }
+
+   .s3 img {
+       box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.5);
+       width: 80%;
+       height: auto;
+   }
+
+   .s3 .p-image {
+       display: flex;
+       align-items: center;
+   }
+
+   @media (max-width: 1000px) {
+       .s3 img {
+           width: 100%;
+           height: auto;
+       }
+   }
+
+    @media (max-width: 1366px) {
+         .s3 p {
+             font-size: 1em;
+             line-height: 150%;
+         }
+    }
+
+   /* Section 4 */
+
+    .s4 {
+        padding: 20px;
+        background: #fff;
+    }
+
+    .s4 h1 {
+        text-align: left;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Section 5 */
+
+    .s5 {
+        padding: 20px;
+        background: #f9f9f9;
+    }
+
+    .s5 h1 {
+        text-align: right;
+    }
+
+    .s5 ul {
+        display: flex;
+        justify-content: left;
+        padding: 0;
+    }
+
+    .s5 ul li {
+        list-style: none;
+        display: inline;
+        margin: 20px;
+    }
+
+    .s5 .socials {
+        display: flex;
+        justify-content: center;
+    }
+
+    /*.button button {
+        background: #000;
+        border: none;
+        padding: 20px;
+        color: #fff;
+        cursor: pointer;
+    }*/
+
+    footer {
+        background: #000;
+    }
+
+    footer .row {
+        margin: 0;
+        padding: 0;
+    }
+
+    footer, ul {
+        text-align: center;
+        color: #fff;
+    }
+
+    footer ul li {
+        list-style: none;
+        display: inline;
+        margin: 10px;
+    }
+
+    footer a {
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #fff;
+    }
+
+    footer p {
+        color: #5d5d5d;
+        font-size: .875em;
+        font-weight: 300;
+    }
+
+
+  /* ==========================================================================
       Media Queries
       ========================================================================== */
 
+      @media (max-width: 895px) {
+          .s2 h1, h1 {
+              font-size: 3.5em;
+          }
+      }
 
-   @media (max-width: 670px) {
-   	.overlay nav {
-   		font-size: .875em;
-   	}
-   }
+      @media (max-width: 800px) {
+          .s2 h1, h1 {
+              font-size: 3em;
+              text-align: left!important;
+          }
+      }
 
-   @media (max-width: 550px) {
-   	.overlay nav {
-   		font-size: .75em;
-   	}
-   }
+      @media (max-width: 700px) {
+          .s2 h1, h1 {
+              font-size: 2.5em;
+              text-align: left!important;
+          }
+      }
+
+      @media (max-width: 512px) {
+          .s2 h1, h1 {
+              font-size: 2.25em;
+          }
+      }
+
+
+      @media (max-width: 670px) {
+          .overlay nav {
+        	  font-size: .875em;
+          }
+      }
+
+      @media (max-width: 550px) {
+          .overlay nav {
+              font-size: .75em;
+          }
+      }
+
+
 
 
 
