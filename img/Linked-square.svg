@@ -4,10 +4,10 @@
 <g id="Canvas" transform="translate(678 699)">
 <g id="Linked-square">
 <g id="Rectangle">
-<use xlink:href="#path0_fill" transform="translate(-678 -699)"/>
+<use xlink:href="#path0_fill" transform="translate(-678 -699)" />
 </g>
 <g id="&#239;&#131;&#161;">
-<use xlink:href="#path1_fill" transform="translate(-655 -681)" fill="#FFFFFF"/>
+<use xlink:href="#path1_fill" transform="translate(-655 -681)" fill="#ffffff"/>
 </g>
 </g>
 </g>

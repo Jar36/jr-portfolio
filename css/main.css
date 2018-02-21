@@ -157,41 +157,50 @@ span#element2, span#element3, span#element4 {
    }
 
    .row-halves .col {
-       width: 49%;
+       width: 48%;
    }
 
-   @media (max-width: 1000px) {
-     .row,
-     .row-halves
-      {
-       display: block;
-     }
+    @media (max-width: 1000px) {
 
-     .row .col,
-     .row-halves .col
-      {
-       width: 100%;
-       margin: 0 0 10px 0;
-     }
-   }
+        .wrapper {
+            width: 100%!important;
+        }
+
+        .row,
+        .row-halves
+        {
+            display: block;
+        }
+
+        .row .col,
+        .row-halves .col
+        {
+            width: 100%;
+            margin: 0 0 10px 0;
+        }
+    }
 
 
-   @media (max-width: 400px) {
-     .row,
-     .row-halves,
-     .row-thirds,
-     .row-fourths {
-       display: block;
-     }
+    @media (max-width: 400px) {
+        .wrapper {
+            width: 100%;
+        }
 
-     .row .col,
-     .row-halves .col,
-     .row-thirds .col,
-     .row-fourths .col {
-       width: 100%;
-       margin: 0 0 10px 0;
-     }
-   }
+        .row,
+        .row-halves,
+        .row-thirds,
+        .row-fourths {
+            display: block;
+        }
+
+        .row .col,
+        .row-halves .col,
+        .row-thirds .col,
+        .row-fourths .col {
+            width: 100%;
+            margin: 0 0 10px 0;
+        }
+    }
 
    /* ==========================================================================
       Image Grid
@@ -305,7 +314,7 @@ span#element2, span#element3, span#element4 {
    .change .bar1 {
        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
        transform: rotate(-405deg) translate(-5px, 6px);
-       background: #Ffff;
+       background: #B9F467;
    }
 
    .change .bar2 {
@@ -315,7 +324,7 @@ span#element2, span#element3, span#element4 {
    .change .bar3 {
        -webkit-transform: rotate(45deg) translate(-5px, -8px);
        transform: rotate(405deg) translate(-5px, -6px);
-       background: #Fff;
+       background: #B9F467;
    }
 
    .navbar {
@@ -451,7 +460,7 @@ span#element2, span#element3, span#element4 {
    .overlay ul li a:focus:after,
    .overlay ul li a:active:after {
        width: 100%;
-   	   background: #fff;
+   	   background: #B9F467;
    }
 
    .overlay.open li {
@@ -486,6 +495,11 @@ span#element2, span#element3, span#element4 {
 
    /* Section 2 */
 
+   .wrapper {
+       width: 80%;
+       margin: 0 auto;
+   }
+
    .s2 {
        background: #fff;
        height: 100vh;
@@ -494,9 +508,8 @@ span#element2, span#element3, span#element4 {
        justify-content: center;
    }
 
-   header .intro {
-       padding:20px;
-       max-width: 80%;
+   .intro {
+       width: 80%;
        margin: 0 auto;
    }
 
@@ -544,8 +557,8 @@ span#element2, span#element3, span#element4 {
 
    .s3 img {
        box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.5);
-       width: 80%;
-       height: auto;
+       /*width: 80%;
+       height: auto;*/
    }
 
    .s3 .p-image {
@@ -593,28 +606,6 @@ span#element2, span#element3, span#element4 {
 
     .s5 h1 {
         text-align: center;
-    }
-
-    .s5 ul {
-        display: flex;
-        justify-content: left;
-        padding: 0;
-    }
-
-    .s5 ul li {
-        list-style: none;
-        display: inline;
-        margin: 10px;
-    }
-
-    .s5 .socials {
-        display: flex;
-        justify-content: center;
-    }
-
-    .socials li {
-        max-width: 70px;
-        height: auto;
     }
 
     .row form {
@@ -709,14 +700,27 @@ span#element2, span#element3, span#element4 {
 
     /* Footer */
 
+    .socials img {
+        width: 32px;
+        height:auto;
+    }
+
+
+
     footer {
         background: #000;
+        padding: 20px 0;
     }
 
     footer .row {
         margin: 0;
         padding: 0;
         height: 100%;
+    }
+
+    footer .row-halves .col {
+        width: 50%;
+        text-align: center;
     }
 
     footer, ul {
@@ -728,6 +732,7 @@ span#element2, span#element3, span#element4 {
         list-style: none;
         display: inline;
         margin: 10px;
+        letter-spacing: 1px;
     }
 
     footer a {
@@ -740,13 +745,31 @@ span#element2, span#element3, span#element4 {
         color: #5d5d5d;
         font-size: .875em;
         font-weight: 300;
-        text-align: left;
+        text-align: center;
+        padding: 20px;
+        line-height: 150%;
     }
 
 
   /* ==========================================================================
       Media Queries
       ========================================================================== */
+
+      @media (max-width: 1000px) {
+
+          ul.footer-menu, ul.socials {
+              padding:0;
+          }
+
+          footer .col {
+              display: block!important;
+              width: 100%!important;
+          }
+
+          fieldset{
+              width: 100%;
+          }
+      }
 
       @media (max-width: 895px) {
           .s2 h1, h1 {
@@ -763,6 +786,7 @@ span#element2, span#element3, span#element4 {
               font-size: 3em;
               text-align: left!important;
           }
+
       }
 
       @media (max-width: 700px) {
