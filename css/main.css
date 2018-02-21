@@ -495,7 +495,7 @@ span#element2, span#element3, span#element4 {
    }
 
    header .intro {
-       /*padding:50px;*/
+       padding:20px;
        max-width: 80%;
        margin: 0 auto;
    }
@@ -699,6 +699,13 @@ span#element2, span#element3, span#element4 {
     .s5 .button {
         width: 50%;
     }
+
+    textarea, input {
+        -webkit-appearance: none;
+        border-radius: 0;
+    }
+
+
 
     /* Footer */
 
