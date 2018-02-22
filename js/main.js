@@ -3,6 +3,11 @@ $(document).ready(function() {
 		$(".overlay").toggleClass("open");
 		$(".contain").toggleClass("change");
 	});
+
+	$(".overlay .overlay-menu li").on("click", function(){
+		$(".overlay").toggleClass("open");
+		$(".contain").toggleClass("change");
+	});
 });
 
 const yourInstance = new TypeIt("#element1", {
