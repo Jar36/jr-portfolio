@@ -1,22 +1,21 @@
+
+
 $(document).ready(function() {
+	// opens and closes overlay nav from animated buttons
+
 	$(".menu-icon").on("click", function() {
 		$(".overlay").toggleClass("open");
 		$(".contain").toggleClass("change");
 	});
+
+	// closes overlay from overlay links
 
 	$(".overlay .overlay-menu li").on("click", function() {
 		$(".overlay").toggleClass("open");
 		$(".contain").toggleClass("change");
 	});
 
-	/*$(".btt img").mouseenter(function() {
-		$(this).css({transform:"scale(1.1)", transition: "all .5s"});
-	});
-
-	$(".btt img").mouseleave(function() {
-		$(this).css({transform:"scale(1)"});
-	});*/
-
+	// Scroll to top button appears
 
 	$(window).scroll(function() {
 		if($(this).scrollTop() > 900) {
@@ -26,7 +25,14 @@ $(document).ready(function() {
 		else {
 			$(".btt img").fadeOut(500);
 		}
-	})
+
+		// Scroll to top scrolls up
+
+		$(".btt img").on("click", function(){
+			$("html, body").animate({scrollTop : 0}, 800);
+		});
+
+	});
 });
 
 const yourInstance = new TypeIt("#element1", {

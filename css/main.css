@@ -767,6 +767,7 @@ span#element2, span#element3, span#element4 {
         background: none;
         cursor: pointer;
         box-shadow: 0px 4px 12px -1px rgba(0,0,0,.5);
+        display: none;
     }
 
   /* ==========================================================================
