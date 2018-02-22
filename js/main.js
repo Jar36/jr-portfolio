@@ -26,13 +26,20 @@ $(document).ready(function() {
 			$(".btt img").fadeOut(500);
 		}
 	});
-	
+
 	// Scroll to top scrolls up
 
 	$(".btt img").click(function(){
 		$("html, body").animate({scrollTop : 0}, 800);
 		return false;
 	});
+
+	$(".footer-menu").find("a").click (function(e){
+		e.preventDefault();
+		var section = $(this).attr("href");
+		$("html, body").animate({scrollTop: $(section).offset().top});
+	});
+
 });
 
 const yourInstance = new TypeIt("#element1", {
@@ -65,7 +72,7 @@ const thirdInstance = new TypeIt("#element3", {
 });
 
 const fourthInstance = new TypeIt("#element4", {
-	strings: ["Contact Me", "Let's Talk..."],
+	strings: ["Let's Talk..."],
 	breakLines: false,
 	nextStringDelay: 3000,
 	loop: false,
