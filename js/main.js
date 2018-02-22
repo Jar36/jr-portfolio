@@ -25,13 +25,13 @@ $(document).ready(function() {
 		else {
 			$(".btt img").fadeOut(500);
 		}
+	});
+	
+	// Scroll to top scrolls up
 
-		// Scroll to top scrolls up
-
-		$(".btt img").on("click", function(){
-			$("html, body").animate({scrollTop : 0}, 800);
-		});
-
+	$(".btt img").click(function(){
+		$("html, body").animate({scrollTop : 0}, 800);
+		return false;
 	});
 });
 
