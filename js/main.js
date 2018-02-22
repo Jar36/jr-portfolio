@@ -4,10 +4,29 @@ $(document).ready(function() {
 		$(".contain").toggleClass("change");
 	});
 
-	$(".overlay .overlay-menu li").on("click", function(){
+	$(".overlay .overlay-menu li").on("click", function() {
 		$(".overlay").toggleClass("open");
 		$(".contain").toggleClass("change");
 	});
+
+	/*$(".btt img").mouseenter(function() {
+		$(this).css({transform:"scale(1.1)", transition: "all .5s"});
+	});
+
+	$(".btt img").mouseleave(function() {
+		$(this).css({transform:"scale(1)"});
+	});*/
+
+
+	$(window).scroll(function() {
+		if($(this).scrollTop() > 900) {
+			$(".btt img").fadeIn(500);
+		}
+
+		else {
+			$(".btt img").fadeOut(500);
+		}
+	})
 });
 
 const yourInstance = new TypeIt("#element1", {

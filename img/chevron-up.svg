@@ -1,0 +1,20 @@
+<svg width="80" height="80" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>chevron-up</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(902 161)">
+<g id="chevron-up">
+<g id="Chevron-up">
+<g id="Rectangle 2">
+<use xlink:href="#path0_fill" transform="translate(-902 -161)" fill="#97938B"/>
+</g>
+<g id="Vector">
+<use xlink:href="#path1_fill" transform="translate(-882 -131.4)" fill="#fff"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 0 0L 80 0L 80 80L 0 80L 0 0Z"/>
+<path id="path1_fill" d="M 0.00210535 19.9992C 0.00210535 20.2687 0.105267 20.5382 0.309486 20.7445C 0.720028 21.155 1.38742 21.155 1.79797 20.7445L 20.0008 2.54168L 38.2036 20.7445C 38.6142 21.155 39.2815 21.155 39.6921 20.7445C 40.1026 20.334 40.1026 19.6666 39.6921 19.256L 20.744 0.307907C 20.3334 -0.102636 19.666 -0.102636 19.2555 0.307907L 0.307381 19.256C 0.101057 19.4624 -1.00005e-10 19.7318 -1.00005e-10 20.0013L 0.00210535 19.9992Z"/>
+</defs>
+</svg>

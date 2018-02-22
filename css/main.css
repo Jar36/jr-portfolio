@@ -314,7 +314,7 @@ span#element2, span#element3, span#element4 {
    .change .bar1 {
        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
        transform: rotate(-405deg) translate(-5px, 6px);
-       background: #B9F467;
+       background: #97938B;
    }
 
    .change .bar2 {
@@ -324,7 +324,7 @@ span#element2, span#element3, span#element4 {
    .change .bar3 {
        -webkit-transform: rotate(45deg) translate(-5px, -8px);
        transform: rotate(405deg) translate(-5px, -6px);
-       background: #B9F467;
+       background: #97938B;
    }
 
    .navbar {
@@ -460,7 +460,7 @@ span#element2, span#element3, span#element4 {
    .overlay ul li a:focus:after,
    .overlay ul li a:active:after {
        width: 100%;
-   	   background: #B9F467;
+   	   background: #97938B;
    }
 
    .overlay.open li {
@@ -521,8 +521,8 @@ span#element2, span#element3, span#element4 {
        font-size: 5em;
    }
 
-   .s2 h1 span#accent {
-       color: #000;
+   .s2 h1 span.accent {
+       color: #97938B;
    }
 
    .s2 h1 span#element1 {
@@ -629,7 +629,8 @@ span#element2, span#element3, span#element4 {
         padding: 15px;
         margin: 10px auto;
         outline: none;
-        border: 2px solid #000;
+        border: 1px solid #000;
+        /*border-radius: 2px;*/
         font-family: 'Poppins', sans-serif;
         letter-spacing: 1px;
         transition: all .3s;
@@ -639,6 +640,10 @@ span#element2, span#element3, span#element4 {
     fieldset textarea:hover {
         background: #000;
         color: #fff;
+    }
+
+    input::placeholder, textarea::placeholder {
+        color:#97938B;
     }
 
     input:hover::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -742,7 +747,7 @@ span#element2, span#element3, span#element4 {
     }
 
     footer p {
-        color: #5d5d5d;
+        color: #97938B;
         font-size: .875em;
         font-weight: 300;
         text-align: center;
@@ -750,6 +755,19 @@ span#element2, span#element3, span#element4 {
         line-height: 150%;
     }
 
+    .btt img {
+        width: 40px;
+        height: auto;
+        position: fixed;
+        bottom: 50px;
+        right: 30px;
+        z-index: 99999;
+        border-radius: 2px;
+        outline: none;
+        background: none;
+        cursor: pointer;
+        box-shadow: 0px 4px 12px -1px rgba(0,0,0,.5);
+    }
 
   /* ==========================================================================
       Media Queries
@@ -765,6 +783,13 @@ span#element2, span#element3, span#element4 {
               display: block!important;
               width: 100%!important;
           }
+
+          footer .row-halves .col, footer p {
+              margin-bottom: 0;
+              padding: 2px;
+          }
+
+
 
           fieldset{
               width: 100%;
