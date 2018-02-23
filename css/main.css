@@ -212,11 +212,11 @@ span#element2, span#element3, span#element4 {
         padding: 0 4px;
     }
 
-    /* Four column layout */
+    /* Three column layout */
 
     .column {
-        flex: 25%;
-        max-width: 25%;
+        flex: 33.3%;
+        max-width: 33.3%; /* change the column width */
         padding: 0 4px;
     }
 
@@ -227,20 +227,27 @@ span#element2, span#element3, span#element4 {
 
     /* Two column layout */
 
-    @media (max-width: 800px) {
-        .column {
-        flex: 50%;
-        max-width: 50%;
-        }
-    }
-
-    /* One column layout */
-    @media (max-width: 600px) {
+    @media (max-width: 700px) {
         .column {
         flex: 100%;
         max-width: 100%;
         }
     }
+
+    /*@media (max-width: 800px) {
+        .column {
+        flex: 50%;
+        max-width: 50%;
+        }
+    }*/
+
+    /* One column layout */
+    /*@media (max-width: 600px) {
+        .column {
+        flex: 100%;
+        max-width: 100%;
+        }
+    }*/
 
 
 /* ==========================================================================
@@ -550,7 +557,7 @@ span#element2, span#element3, span#element4 {
         font-weight: 300!important;
     }
 
-   .s3 p{
+   .s3 p {
        font-size: 1.15em;
        line-height: 150%;
    }
@@ -589,6 +596,13 @@ span#element2, span#element3, span#element4 {
 
     .s4 h1 {
         text-align: left;
+    }
+
+    .p-header {
+        padding: 50px 20px;
+        color: #000;
+        letter-spacing: 1px;
+        text-decoration: underline;
     }
 
     img {
