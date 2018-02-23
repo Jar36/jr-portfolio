@@ -507,8 +507,20 @@ span#element2, span#element3, span#element4 {
        margin: 0 auto;
    }
 
-   .s2 {
+   /*.hwrapper {
        background: #fff;
+       background: linear-gradient(
+      rgba(255, 255, 255, 0.2),
+      rgba(255, 255, 255, 0.2)
+    ),
+
+    url(../img/bg-016.png)no-repeat center;
+        background-size: cover;
+
+   }*/
+
+   .s2 {
+
        height: 100vh;
        display: flex;
        align-items: center;
@@ -602,7 +614,7 @@ span#element2, span#element3, span#element4 {
         padding: 50px 20px;
         color: #000;
         letter-spacing: 2px;
-        text-decoration: overline;
+        text-decoration: overline underline;
     }
 
     img {
