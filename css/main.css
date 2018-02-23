@@ -601,8 +601,8 @@ span#element2, span#element3, span#element4 {
     .p-header {
         padding: 50px 20px;
         color: #000;
-        letter-spacing: 1px;
-        text-decoration: underline;
+        letter-spacing: 2px;
+        text-decoration: overline;
     }
 
     img {
