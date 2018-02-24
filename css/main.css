@@ -575,7 +575,7 @@ span#element2, span#element3, span#element4 {
    }
 
    .s3 img {
-       box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.5);
+       box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.5), 0px 10px 20px 0px rgba(0, 0, 0, 0.5);
        /*width: 80%;
        height: auto;*/
    }
