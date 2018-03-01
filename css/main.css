@@ -872,7 +872,7 @@ span#element2 {
     }
 
     button.btt {
-        display: none;
+        /*display: none;*/
     }
 
     .btt img {

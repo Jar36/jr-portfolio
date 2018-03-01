@@ -81,16 +81,8 @@ const fourthInstance = new TypeIt("#element4", {
 	autoStart: false
 });
 
-/*$(window).scroll(function() {
-   var hT = $('.scroll-to').offset().top,
-       hH = $('.scroll-to').outerHeight(),
-       wH = $(window).height(),
-       wS = $(this).scrollTop();
-	   if (wS > (hT+hH-wH) && (hT > wS) && (wS+wH > hT+hH)){
-	   }
-});*/
-
 // Select all links with hashes
+
 $('a[href*="#"]')
   // Remove links that don't actually link to anything
   .not('[href="#"]')
@@ -126,3 +118,13 @@ $('a[href*="#"]')
       }
     }
   });
+
+
+  /*$(window).scroll(function() {
+     var hT = $('.scroll-to').offset().top,
+         hH = $('.scroll-to').outerHeight(),
+         wH = $(window).height(),
+         wS = $(this).scrollTop();
+  	   if (wS > (hT+hH-wH) && (hT > wS) && (wS+wH > hT+hH)){
+  	   }
+  });*/
