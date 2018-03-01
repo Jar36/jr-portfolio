@@ -31,14 +31,26 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
 
-        <button class="btt"><img src="img/chevron-up.svg" /></button>
+
 
         <section class="s1">
         <!-- Navbar -->
         <nav class="navbar">
-            <a href="https://jar36.github.io/jr-portfolio/"><img src="img/logo.svg" /></a>
-        	<!--<h2 class="brand">Joseph Romero</h2>-->
+        	<ul id="top-nav">
+                <a href="https://jar36.github.io/jr-portfolio/"><img src="img/logo-rounded-drk.svg" class="logo"/></a>
+                <li><a href="#about">About</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <ul id="socials-top">
+                <li><a href="https://www.linkedin.com/in/joseph-a-romero/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="https://github.com/Jar36" target="_blank"><i class="fab fa-github"></i></a></li>
+                <li><a href="https://twitter.com/jojo33r"  target="blank"><i class="fab fa-twitter"></i></a></li>
+            </ul>
+
         	<div class="navbar-buttons">
+                <a href="https://jar36.github.io/jr-portfolio/"><img src="img/logo.svg" /></a>
         	<button class="contain menu-icon">
         		<div class="bar1"></div>
         		<div class="bar2"></div>
@@ -68,26 +80,26 @@
     <!-- Begin site sections -->
 
     <div class="hwrapper">
-        <section class="s2" id="home">
-            <header class="intro">
-                <h1>Hello my name is Joe<span class="accent">.</span></h1>
-                <h1><h1>
+        <section class="s2 row-halves" id="home">
+            <section class="col">
+                <img src="img/joe-image-alt.svg" alt="Joseph Romero" />
+            </section>
+
+            <header class="col">
+                <h1><span id="lg-wrd">Hello.</span></br>My name is Joe.</br></h1>
                 <h1>I'm a<em><span id="element1"></span></em></h1>
             </header>
         </section>
     </div>
 
+    <button class="btt"><img src="img/chevron-up.svg" /></button>
 
 
     <section class="s3" id="about">
-        <div class="row-halves wrapper">
-
-            <section class="col p-image">
-                <img src="img/joe-image.svg" height:"300px" width:"300px" alt="Joseph Romero" />
-            </section>
+        <div class="row wrapper">
             <header class="col"><h1 class="scroll-to"><span id="element2"></span></h1>
                 <p>
-                    <strong>Hello. My name is Joe.</strong> I am a Colorado based jr. designer, web developer, life long learner, and ready for new opportunities. A bit about me. I love coffee, peanut butter, welding, and spending time with my family.
+                    <span id="lead">Hello. My name is Joe.</span> I am a Colorado based jr. designer, web developer, life long learner, and ready for new opportunities. A bit about me. I love coffee, peanut butter, welding, and spending time with my family.
                 </p>
                 <p>
                     I believe in user centered design and delevering the best possible experiences to people. I have experience with HTML, CSS, Bootstrap, Flexbox, Javascript, jQuery, Ruby and Rails, Git, Github, Figma, and Photoshop.
@@ -95,6 +107,8 @@
                 <p>
                     I have great communication skills, worked on many teams of different sizes, willing to learn, can teach, train and overall bring a diverse skill set to the table. Currently, I am looking to join a new team of like minded folks. So feel free to reach out and let’s connect.
                 </p>
+                <a href="#contact" class="link-btn-solid" id="contact-section">Let's Talk</a>
+
             </header>
         </div>
     </section>
@@ -104,9 +118,11 @@
             <header class="col"><h1 class="scroll-to"><span id="element3"></span></h1></header>
             <divclass="col"></div>
         </div>
+
         <h2 class="wrapper p-header">WordPress Sites</h2>
 
         <div class="img-row wrapper">
+
         	<div class="column">
         		<img src="img/portfolio/Bear-track-studios-masonry.jpg" />
                 <img src="img/portfolio/snb-masonry.jpg" />
@@ -161,21 +177,21 @@
             <form action="https://formspree.io/jromero361980@gmail.com" class="col" method="post">
 
                 <fieldset>
-                    <div>
+                    <form>
                         <legend for="name">Name</legend>
                         <input type="text" id="name" name="user_name" placeholder="Name"/>
-                    </div>
-                    <div>
+                    </form>
+                    <form>
                         <legend for="mail">E-mail</legend>
                         <input type="text" id="email" name="user_mail" placeholder="E-mail"/>
-                    </div>
-                    <div>
+                    </form>
+                    <form>
                         <legend for="msg">Message</legend>
                         <textarea id="msg" name="user_message" placeholder="Message"></textarea>
-                    </div>
-                    <div class="button">
-                        <input type="submit" value="Send" />
-                    </div>
+                    </form>
+                    <form>
+                        <input class="link-btn-solid" type="submit" value="Send" />
+                    </form>
                 </fieldset>
 
             </form>
@@ -186,32 +202,21 @@
     </section>
 
     <footer>
-        <nav>
-            <div class="row-thirds">
-                <div class="col">
-                    <ul class="footer-menu">
-                        <li><a href="#home">Home<!--<img src="img/logo.svg" style="width:32px; height:32px;" />--></a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#work">Work</a></li>
-                        <li><a href="#contact">Contact</a></li>
+        <nav class="row">
+            <!--<ul class= "col">
+                <li><a href="https://jar36.github.io/jr-portfolio/"><img src="img/logo-rounded-drk.svg" class="logo"/></a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>-->
 
-                    </ul>
-                </div>
-
-                <div class="col">
-                    <ul class="socials">
-                        <li><a href="https://www.linkedin.com/in/joseph-a-romero/" target="_blank"><img src="img/jr-linkedin.svg" /></a></li>
-                        <li><a href="https://github.com/Jar36" target="_blank"><img src="img/jr-github.svg" /></a></li>
-                        <li><a href="https://twitter.com/jojo33r"  target="blank"><img src="img/jr-twitter.svg" /></a></li>
-                    </ul>
-                </div>
-
-                <div class="col">
-                    <p>&copy; 2018  |  Designed and hand coded by me</p>
-                </div>
-            </div>
+            <ul class="col" id="socials-footer">
+                <li><a href="https://www.linkedin.com/in/joseph-a-romero/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="https://github.com/Jar36" target="_blank"><i class="fab fa-github"></i></a></li>
+                <li><a href="https://twitter.com/jojo33r"  target="blank"><i class="fab fa-twitter"></i></a></li>
+                <li id="cp">&copy; 2018 | All rights reserved</li>
+            </ul>
         </nav>
-
     </footer>
 
         <script src="js/vendor/modernizr-3.5.0.min.js"></script>
