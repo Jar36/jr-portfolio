@@ -354,7 +354,6 @@ span#element2 {
        width: 35px;
        height: 2px;
        background-color: #000;
-       border-radius: 2px;
        margin: 6px 0;
        transition: 0.4s;
    }
@@ -364,7 +363,6 @@ span#element2 {
        width: 25px;
        height: 2px;
        background-color: #000;
-       border-radius: 20px;
        margin: 6px 0 6px 10px;
        transition: 0.4s;
    }
@@ -598,7 +596,7 @@ span#element2 {
     }
 
     .wrapper {
-        width: 50%;
+        width: 60%;
         margin: 0 auto;
     }
 
@@ -641,7 +639,6 @@ span#element2 {
         color: #97938B;
         text-transform: uppercase;
         font-weight: bold;
-        border-radius: 4px;
         padding: 15px 30px;
         transition: all .35s;
         letter-spacing: 2px;
@@ -680,10 +677,11 @@ span#element2 {
     }
 
     .p-header {
+        display: none;
         padding: 50px 20px;
-        color: #000;
+        color: #38353a94;
         letter-spacing: 2px;
-        text-decoration: overline underline;
+
     }
 
     img {
@@ -698,7 +696,7 @@ span#element2 {
         padding-bottom: 100px;
         background-color: #38353A;
         border-top: 4px solid #c0bab2;
-        border-bottom: 20px solid #97938B;
+        /*border-bottom: 20px solid #97938B;*/
     }
 
     .s5 h1 {
@@ -728,7 +726,6 @@ span#element2 {
         outline: none;
         background: transparent;
         border: 2px solid #97938B;
-        border-radius: 4px;
         font-family: 'Poppins', sans-serif;
         letter-spacing: 1px;
         transition: all .3s;
@@ -749,26 +746,30 @@ span#element2 {
         color: #38353A;
     }
 
+    input::placeholder:focus, textarea::placeholder:focus {
+        color:#38353A;
+    }
+
     input::placeholder, textarea::placeholder {
         color:#97938B;
     }
 
     input:hover::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-      color: #EEEBE7;
+      color: #38353A;
     }
     input:hover::-moz-placeholder { /* Firefox 19+ */
-      color: #EEEBE7;
+      color: #38353A;
     }
     input:hover:-ms-input-placeholder { /* IE 10+ */
-      color: #EEEBE7;
+      color: #38353A;
     }
     input:hover:-moz-placeholder { /* Firefox 18- */
-      color: #EEEBE7;
+      color: #38353A;
     }
 
     input:hover::placeholder,
     textarea:hover::placeholder {
-        color: #EEEBE7;
+        color: #38353A;
     }
 
     fieldset textarea {
@@ -882,7 +883,6 @@ span#element2 {
         bottom: 50px;
         right: 30px;
         z-index: 99999;
-        border-radius: 2px;
         outline: none;
         background: none;
         cursor: pointer;
