@@ -469,6 +469,11 @@ button.contain.open-menu {
        margin-bottom: 100px;
    }
 
+   textarea, input {
+       -webkit-appearance: none;
+       border-radius: 0;
+   }
+
     input, textarea {
         width: 100%;
         background: transparent;
