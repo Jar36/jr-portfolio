@@ -1,16 +1,16 @@
 <svg width="150" height="150" viewBox="0 0 150 150" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <title>logo</title>
 <desc>Created using Figma</desc>
-<g id="Canvas" transform="translate(536 205)">
+<g id="Canvas" transform="translate(1055 -877)">
 <g id="logo">
 <g id="Vector">
-<use xlink:href="#path0_fill" transform="translate(-536 -205)" fill="#38353A"/>
+<use xlink:href="#path0_fill" transform="translate(-1055 877)" fill="#222222"/>
 </g>
 <g id="Vector">
-<use xlink:href="#path1_fill" transform="translate(-498.41 -179.615)" fill="#EEEBE7"/>
+<use xlink:href="#path1_fill" transform="translate(-1017.41 902.385)" fill="#FFFFFF"/>
 </g>
 <g id="Vector">
-<use xlink:href="#path2_fill" transform="translate(-465.698 -155.214)" fill="#EEEBE7"/>
+<use xlink:href="#path2_fill" transform="translate(-984.698 926.786)" fill="#FFFFFF"/>
 </g>
 </g>
 </g>

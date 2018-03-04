@@ -10,216 +10,142 @@
         <link rel="manifest" href="site.webmanifest">
         <link rel="apple-touch-icon" href="icon.png">
         <!-- Place favicon.ico in the root directory -->
-
-        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-        <link rel="manifest" href="site.webmanifest">
-        <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
-        <meta name="msapplication-TileColor" content="#da532c">
-        <meta name="theme-color" content="#ffffff">
-
-
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
-        <link href="https://fonts.googleapis.com/css?family=PT+Serif:400i|Poppins:300,400,600" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Cardo:400i|Montserrat:400,500,600" rel="stylesheet">
+        <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/typeit/5.4.1/typeit.min.js"></script>
-        <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     </head>
     <body>
         <!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
 
+        <!-- Add your site or application content here -->
+        <aside>
+            <div class="hero-image"></div>
+        </aside>
 
+    	<!-- Navbar -->
+    	<nav class="navbar">
+    		<h2 class="brand"></h2>
+    		<div class="navbar-buttons">
+        		<button class="contain open-menu">
+        			<div class="bar1"></div>
+        			<div class="bar2"></div>
+        			<div class="bar3"></div>
+        		</button>
+    		</div>
+    	</nav>
+    	<!-- Overlay Navigation -->
+    	<nav class="overlay">
+    		<h2 class="nav-title"></h2>
+    		<nav class="overlay-menu">
+    			<ul>
+    				<li><a href="#home">Home</a></li>
+    				<li><a href="#about">About</a></li>
+    				<li><a href="#work">Work</a></li>
+    				<li><a href="#contact">Contact</a></li>
+    			</ul>
+    		</nav>
+    	</nav>
 
-        <section class="s1">
-        <!-- Navbar -->
-        <nav class="navbar">
-        	<ul id="top-nav">
-                <a href="https://jar36.github.io/jr-portfolio/"><img src="img/logo.svg" class="logo"/></a>
-                <li><a href="#about">About</a></li>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+        <main>
+            <header class="section-1" id="home">
+                <h1>Hello.</h1>
+                <h2>My name is Joe</h2>
+                <h3>I'm a <span id="element"></span></h3>
+                <div id="mobile-image">
+                    <img src="img/joe.svg" />
+                </div>
+            </header>
 
-            <ul id="socials-top">
-                <li><a href="https://www.linkedin.com/in/joseph-a-romero/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-                <li><a href="https://github.com/Jar36" target="_blank"><i class="fab fa-github"></i></a></li>
-                <li><a href="https://twitter.com/jojo33r"  target="blank"><i class="fab fa-twitter"></i></a></li>
-            </ul>
+            <section id="work" class="scroll-to">
+                <header>
+                    <h3>Recent work</h3>
+                </header>
 
-        	<div class="navbar-buttons">
-                <a href="https://jar36.github.io/jr-portfolio/"><img src="img/logo.svg" /></a>
-        	<button class="contain menu-icon">
-        		<div class="bar1"></div>
-        		<div class="bar2"></div>
-        		<div class="bar3"></div>
-        	</button>
-        	</div>
-        </nav>
-        <!-- Overlay Navigation -->
-        <nav class="overlay">
-        	<h2 class="nav-title"><img src="img/logo-white.svg" style="width:50px; height:50px;"/></h2>
-        	<nav class="overlay-menu">
-        		<ul>
-        			<li class="link"><a href="https://jar36.github.io/jr-portfolio/">Home</a></li>
-        			<li class="link"><a href="#about">About</a></li>
-        			<li class="link"><a href="#work">Work</a></li>
-        			<li class="link"><a href="#contact">Contact</a></li>
-                    <button class="contain menu-icon close-menu">
-                		<div class="bar1"></div>
-                		<div class="bar2"></div>
-                		<div class="bar3"></div>
-                	</button>
-        		</ul>
-        	</nav>
-        </nav>
-    </section>
+                <div class="row">
+                	<div class="column">
+                		<img src="https://images.unsplash.com/photo-1506630525117-569864448381?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2b312fb1e449aa4986c29c83752597e6&auto=format&fit=crop&w=934&q=80">
+                		<img src="https://images.unsplash.com/photo-1496153615838-861aed350146?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=95f63835f92b3726a9d675412d421b2a&auto=format&fit=crop&w=2590&q=80">
+                		<img src="https://images.unsplash.com/photo-1503249023995-51b0f3778ccf?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9df0dd21ec52afa496c963a48da2d287&auto=format&fit=crop&w=911&q=80">
 
-    <!-- Begin site sections -->
+                	</div>
 
-    <div class="hwrapper">
-        <section class="s2 row-halves" id="home">
-            <section class="col">
-                <img src="img/joe-image-alt.svg" alt="Joseph Romero" />
+                	<div class="column">
+                		<img src="https://images.unsplash.com/photo-1482192596544-9eb780fc7f66?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bbe0bd1ecfaaa91394e0c9effb8b0415&auto=format&fit=crop&w=2550&q=80">
+                		<img src="https://images.unsplash.com/photo-1516810714657-e654b97f1d80?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4b0b6d8a68ebad0eada0e4da17737094&auto=format&fit=crop&w=934&q=80">
+                		<img src="https://images.unsplash.com/photo-1496871455396-14e56815f1f4?ixlib=rb-0.3.5&s=2460fc20c6ed6192b7b5e1b6a2d375bf&auto=format&fit=crop&w=917&q=80">
+                	</div>
+                </div>
             </section>
 
-            <header class="col">
-                <h1><span id="lg-wrd">Hello.</span></br>My name is Joe.</br></h1>
-                <h1>I'm a<em><span id="element1"></span></em></h1>
-            </header>
-        </section>
-    </div>
+            <section id="about" class="scroll-to">
+                <header>
+                    <h3>About Me</h3>
+                </header>
 
-    <button class="btt"><img src="img/chevron-up.svg" /></button>
+                <section class="about-content">
+                    <p>
+                        <span id="lead">Hello. My name is Joe.</span> I am a Colorado based jr. designer, web developer, life long learner, and ready for new opportunities. A bit about me. I love coffee, peanut butter, welding, and spending time with my family.
+                    </p>
+                    <p>
+                        I believe in user centered design and delevering the best possible experiences to people. I have experience with HTML, CSS, Bootstrap, Flexbox, Javascript, jQuery, Ruby and Rails, Git, Github, Figma, and Photoshop.
+                    </p>
+                    <p>
+                        I have great communication skills, worked on many teams of different sizes, willing to learn, can teach, train and overall bring a diverse skill set to the table. Currently, I am looking to join a new team of like minded folks. So feel free to reach out and let’s connect.
+                    </p>
+                </section>
 
+            </section>
 
-    <section class="s3" id="about">
-        <div class="row wrapper">
-            <header class="col"><h1 class="scroll-to"><span id="element2"></span></h1>
-                <p>
-                    <span id="lead">Hello. My name is Joe.</span> I am a Colorado based jr. designer, web developer, life long learner, and ready for new opportunities. A bit about me. I love coffee, peanut butter, welding, and spending time with my family.
-                </p>
-                <p>
-                    I believe in user centered design and delevering the best possible experiences to people. I have experience with HTML, CSS, Bootstrap, Flexbox, Javascript, jQuery, Ruby and Rails, Git, Github, Figma, and Photoshop.
-                </p>
-                <p>
-                    I have great communication skills, worked on many teams of different sizes, willing to learn, can teach, train and overall bring a diverse skill set to the table. Currently, I am looking to join a new team of like minded folks. So feel free to reach out and let’s connect.
-                </p>
-                <a href="#contact" class="link-btn-solid" id="contact-section">Let's Talk</a>
+            <section id="contact" class="scroll-to">
+                <header>
+                    <h3>Let's Talk</h3>
+                </header>
 
-            </header>
-        </div>
-    </section>
-
-    <section class="s4" id="work">
-        <div class="row wrapper">
-            <header class="col"><h1 class="scroll-to"><span id="element3"></span></h1></header>
-            <divclass="col"></div>
-        </div>
-
-        <h2 class="wrapper p-header">WordPress Sites</h2>
-
-        <div class="img-row wrapper">
-
-        	<div class="column">
-        		<img src="img/portfolio/Bear-track-studios-masonry.jpg" />
-                <img src="img/portfolio/snb-masonry.jpg" />
-
-                <img src="img/portfolio/Mobile_Designing-iOS.png" />
-
-
-
-        	</div>
-
-        	<div class="column">
-        		<img src="img/portfolio/RJappraisals-masonry.jpg" />
-                <img src="img/portfolio/Chad's-roofing-masonry.jpg" />
-                <img src="img/portfolio/Jakes-Plumbing-masonry.jpg" />
-
-                <img src="img/portfolio/Restaurant-listing.png" />
-                <img src="img/portfolio/Movie-info-listing.png"  />
-
-
-
-        	</div>
-
-        	<div class="column">
-                <img src="img/portfolio/Jennifers-make-up-blog-masonry.jpg" />
-        		<img src="img/portfolio/wake-fest-masonry.jpg" />
-
-                <img src="img/portfolio/BusyBus.png" />
-
-        	</div>
-
-
-
-        	<!--<div class="column"></div>-->
-
-        </div>
-
-        <!--<h2 class="wrapper p-header">Mobile UX-UI Design</h2>
-
-        <div class="img-row wrapper">
-        	<div class="column">
-                <img src="img/portfolio/Mobile_Designing-iOS.png" />
-                <img src="img/portfolio/Restaurant-listing.png" />
-        	</div>
-
-        	<div class="column">
-                <img src="img/portfolio/BlocTalk.png" />
-        	</div>
-
-        	<div class="column">
-                <img src="img/portfolio/BusyBus.png" />
-                <img src="img/portfolio/Movie-info-listing.png"  />
-        	</div>
-
-        	
-
-        </div>-->
-    </section>
-
-    <section class="s5" id="contact">
-        <div class="row">
-            <header class="col"><h1 class="scroll-to"><span id="element4"></span></h1></header>
-        </div>
-
-        <div class="row">
-            <form action="https://formspree.io/jromero361980@gmail.com" class="col" method="post">
-
-                <fieldset>
+                <form action="https://formspree.io/jromero361980@gmail.com" class="col" method="post">
+                    <fieldset>
                         <legend for="name">Name</legend>
-                        <input type="text" id="name" name="user_name" placeholder="Name"/>
+                        <input type="text" id="name" name="user_name" />
                         <legend for="mail">E-mail</legend>
-                        <input type="text" id="email" name="user_mail" placeholder="E-mail"/>
+                        <input type="text" id="email" name="user_mail" />
                         <legend for="msg">Message</legend>
-                        <textarea id="msg" name="user_message" placeholder="Message"></textarea>
+                        <textarea id="msg" name="user_message"></textarea>
                         <input class="link-btn-solid" type="submit" value="Send" />
-                </fieldset>
+                        <input type="text" name="_gotcha" style="display:none" />
+                    </fieldset>
+                </form>
+            </section>
 
-            </form>
-        </div>
-    </section>
-
-    <footer>
-        <nav class="row">
-            <!--<ul class= "col">
-                <li><a href="https://jar36.github.io/jr-portfolio/"><img src="img/logo-rounded-drk.svg" class="logo"/></a></li>
+            <footer>
+                <nav>
+            <ul>
+                <li><a href="https://jar36.github.io/jr-portfolio/">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#work">Work</a></li>
                 <li><a href="#contact">Contact</a></li>
-            </ul>-->
+            </ul>
 
-            <ul class="col" id="socials-footer">
+            <ul id="socials-footer">
                 <li><a href="https://www.linkedin.com/in/joseph-a-romero/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
                 <li><a href="https://github.com/Jar36" target="_blank"><i class="fab fa-github"></i></a></li>
                 <li><a href="https://twitter.com/jojo33r"  target="blank"><i class="fab fa-twitter"></i></a></li>
                 <li id="cp">&copy; 2018 | All rights reserved</li>
             </ul>
         </nav>
-    </footer>
+            </footer>
+            <button class="btt"><img src="img/chevron-up-square.svg" /></button>
+        </main>
+
+
+
+
+
+
+
+        <!-- Application scripts -->
 
         <script src="js/vendor/modernizr-3.5.0.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>

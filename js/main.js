@@ -1,4 +1,18 @@
+$(document).ready(function() {
+	$(".open-menu").on("click", function() {
+		$(".overlay").toggleClass("open");
+		$(".contain").toggleClass("change");
+	});
+});
 
+const yourInstance = new TypeIt("#element", {
+	strings: ["designer", "coder ..."],
+	breakLines: false,
+	nextStringDelay: 3000,
+    lifeLike:true,
+	loopDelay: 3000,
+	loop: true
+});
 
 $(document).ready(function() {
 	// opens and closes overlay nav from animated buttons
@@ -34,51 +48,12 @@ $(document).ready(function() {
 		return false;
 	});
 
-	$(".footer-menu").find("a").click (function(e){
+	$("footer").find("a").click (function(e){
 		e.preventDefault();
 		var section = $(this).attr("href");
 		$("html, body").animate({scrollTop: $(section).offset().top});
 	});
 
-});
-
-const yourInstance = new TypeIt("#element1", {
-	strings: ["designer", "developer"],
-	lifeLike: true,
-	breakLines: false,
-	nextStringDelay: 3000,
-	loopDelay: 3000,
-	loop: true
-});
-
-const secondInstance = new TypeIt("#element2", {
-	strings: ["About Me", "My Skills", "What I Do..."],
-	breakLines: false,
-	nextStringDelay: 3000,
-	loop: false,
-	startDelay: 500,
-	lifeLike: true,
-	autoStart: false
-});
-
-const thirdInstance = new TypeIt("#element3", {
-	strings: ["Projects", "Recent Work..."],
-	breakLines: false,
-	nextStringDelay: 3000,
-	loop: false,
-	startDelay: 500,
-	lifeLike: true,
-	autoStart: false
-});
-
-const fourthInstance = new TypeIt("#element4", {
-	strings: ["Let's Talk..."],
-	breakLines: false,
-	nextStringDelay: 3000,
-	loop: false,
-	startDelay: 500,
-	lifeLike: true,
-	autoStart: false
 });
 
 // Select all links with hashes
@@ -118,13 +93,3 @@ $('a[href*="#"]')
       }
     }
   });
-
-
-  /*$(window).scroll(function() {
-     var hT = $('.scroll-to').offset().top,
-         hH = $('.scroll-to').outerHeight(),
-         wH = $(window).height(),
-         wS = $(this).scrollTop();
-  	   if (wS > (hT+hH-wH) && (hT > wS) && (wS+wH > hT+hH)){
-  	   }
-  });*/
